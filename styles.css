@@ -224,7 +224,7 @@ transition: transform .25s ease, opacity .2s ease;
     bottom: 0;
     background: 
       linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.6) 100%),
-      url("assets/Background.png") center/cover no-repeat;
+      url("assets/Background.webp") center/cover no-repeat;
 }
 
 .hero-content {
@@ -767,4 +767,17 @@ transition: transform .25s ease, opacity .2s ease;
     .whatsapp-btn {
         display: none;
     }
+}
+
+/* Desktop size boost */
+@media (min-width: 1025px) {
+  .whatsapp-btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .whatsapp-btn img {
+    width: 80px;
+    height: 80px;
+  }
 }
