@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="icon-author" content="Icons by riajulislam - https://www.flaticon.com/authors/riajulislam">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hudson Nails Cambridge | Bio Sculpture Gel Manicures & Pedicures</title>
     <meta name="description" content="Hudson Nails Cambridge - specialists in Bio Sculpture gel manicures and pedicures. Vegan, cruelty-free treatments for strong, healthy nails. Book your appointment today.">
@@ -9,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preload" as="image" href="assets/Background-mobile.webp">
+
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -327,44 +330,67 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="section bg-grey">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Gallery of Our Work</h2>
-                <p class="section-subtitle">
-                    Browse our portfolio of beautiful nail designs and Bio Sculpture treatments
-                </p>
-            </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-overlay">
-                        <p>French Manicure</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-overlay">
-                        <p>Glamour Red</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-overlay">
-                        <p>Natural Nude</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-overlay">
-                        <p>Ombre Gradient</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-footer">
-                <p>Each design is customized to match your personal style</p>
-                <a href="#booking" class="btn-primary">Create Your Look</a>
-            </div>
-        </div>
-    </section>
+<section id="gallery" class="section bg-grey">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Gallery of Our Work</h2>
+      <p class="section-subtitle">
+        Browse our portfolio of beautiful nail designs and Bio Sculpture treatments
+      </p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+  <!-- always-visible 4 -->
+  <div class="gallery-item">
+    <img src="assets/showcase1.webp" alt="Bio Sculpture nails 1" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item">
+    <img src="assets/showcase2.webp" alt="Bio Sculpture nails 2" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item">
+    <img src="assets/showcase3.webp" alt="Bio Sculpture nails 3" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item">
+    <img src="assets/showcase4.webp" alt="Bio Sculpture nails 4" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+
+  <!-- hidden by default -->
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase5.webp" alt="Bio Sculpture nails 5" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase6.webp" alt="Bio Sculpture nails 6" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase7.webp" alt="Bio Sculpture nails 7" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase8.webp" alt="Bio Sculpture nails 8" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase9.webp" alt="Bio Sculpture nails 9" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase10.webp" alt="Bio Sculpture nails 10" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase11.webp" alt="Bio Sculpture nails 11" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+  <div class="gallery-item gallery-hidden">
+    <img src="assets/showcase12.webp" alt="Bio Sculpture nails 12" loading="lazy" decoding="async" width="400" height="400">
+  </div>
+</div>
+
+
+    <div class="gallery-footer">
+      <p>Each design is customized to match your personal style</p>
+      <div class="gallery-buttons">
+        <button id="viewMoreBtn" class="btn-primary">View More</button>
+        <a href="#booking" class="btn-primary">Create Your Look</a>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
@@ -420,50 +446,64 @@
   </iframe>
 </div>
             </div>
+<!-- Salon Interior Gallery -->
+<div class="interior-gallery">
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="assets/interior1.webp" alt="Photo 1"></div>
+    <div class="gallery-item"><img src="assets/interior2.webp" alt="Photo 2"></div>
+    <div class="gallery-item"><img src="assets/interior3.webp" alt="Photo 3"></div>
+    <div class="gallery-item"><img src="assets/interior4.webp" alt="Photo 4"></div>
+  </div>
+</div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3 class="footer-title">Hudson Nails</h3>
-                    <p>Premium Bio Sculpture nail treatments for healthy, beautiful nails.</p>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#services">Services & Pricing</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#booking">Book Appointment</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Connect With Us</h4>
-                    <p>1 Shepherds Close, Cambridge, CB1 9HP</p>
-                    <p>07578 618023</p>
-                    <div class="social-links">
-  <a href="https://www.instagram.com/hudsonnailss/" aria-label="Instagram">
-    Follow us on Instagram
-  </a>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="footer">
-  <div class="footer-logo" onclick="window.open('https://www.solarisai.co.uk', '_blank')">
-    <div class="logo">
-      <img src="assets/solarisai.webp" style="height:28px;" alt="">
-      <span class="logo-text"></span>
-    </div>
-  </div>
-  <p class="footer-text">© 2025 Solaris AI. All rights reserved. Ready to build intelligent websites for your business.</p>
+<footer class="footer">
+  <div class="container">
+
+    <!-- Top -->
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3 class="footer-title">Hudson Nails</h3>
+        <p>Premium Bio Sculpture nail treatments for healthy, beautiful nails.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services & Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#booking">Book Appointment</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect With Us</h4>
+        <p>1 Shepherds Close, Cambridge, CB1 9HP</p>
+        <p>07578 618023</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/hudsonnailss/" aria-label="Instagram">Follow us on Instagram</a>
         </div>
-    </footer>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+<div class="footer-bottom">
+  <span>© 2025 Hudson Nails. All rights reserved.</span>
+  <span class="dot" aria-hidden="true">·</span>
+
+  <!-- Logo-only credit -->
+  <a class="credit" href="https://www.solarisai.co.uk"
+     target="_blank" rel="noopener"
+     aria-label="Website by Solaris AI">
+    <img src="assets/solarisai.webp" alt="">
+    <span class="sr-only">Website by Solaris AI</span>
+  </a>
+</div>
+
+</footer>
+
 
 
 <!-- WhatsApp Button -->
@@ -476,34 +516,52 @@
 </a>
 
 
-    <!-- JavaScript -->
-    <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 20) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+<script>
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
+  if (window.scrollY > 20) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+});
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    navLinks.classList.remove('active');
-                    mobileMenuBtn.classList.remove('active');
-                }
-            });
-        });
-    </script>
+// Smooth scrolling for in-page links + close mobile menu
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    const href = anchor.getAttribute('href');
+    // allow clicks that don't point to an element
+    if (!href || href === '#') return;
+
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // close the mobile menu checkbox (no undefined vars)
+    const navToggle = document.getElementById('nav-toggle');
+    if (navToggle) navToggle.checked = false;
+  });
+});
+
+// ------- Gallery: View More / View Less -------
+const hiddenItems = document.querySelectorAll('.gallery-hidden');
+const viewMoreBtn = document.getElementById('viewMoreBtn');
+let galleryExpanded = false;
+
+// ensure hidden by default (in case CSS didn't apply yet)
+hiddenItems.forEach(el => (el.style.display = 'none'));
+
+function toggleGallery() {
+  galleryExpanded = !galleryExpanded;
+  hiddenItems.forEach(el => (el.style.display = galleryExpanded ? 'block' : 'none'));
+  if (viewMoreBtn) viewMoreBtn.textContent = galleryExpanded ? 'View Less' : 'View More';
+}
+
+// if you keep the inline onclick, this still works.
+// Or attach here and remove the inline attribute:
+if (viewMoreBtn) viewMoreBtn.addEventListener('click', toggleGallery);
+</script>
+
 </body>
 </html>
